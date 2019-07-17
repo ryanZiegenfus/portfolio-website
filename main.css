@@ -780,7 +780,6 @@ input, select, textarea {
 
 			.row {
 				display: flex;
-				flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
 			}
@@ -870,7 +869,7 @@ input, select, textarea {
 				}
 
 				.row > .col-7-large {
-					width: 58.33333%;
+					width: 50% !important;
 				}
 
 				.row > .off-7-large {
