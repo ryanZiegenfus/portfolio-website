@@ -356,8 +356,7 @@ input, select, textarea {
 			display: flex;
 			flex-flow: column nowrap;
 			width: 48%;
-			margin: 0px 20px 40px 0px;
-			padding-bottom: 30px;
+			margin: 0px 20px 100px 0px;
 			background: lightgrey;
 		}
 
@@ -486,7 +485,7 @@ input, select, textarea {
 		}
 
 			.row > * {
-				padding: 10px 10px 0px 10px;
+				padding: 0px 0px 0px 0px;
 			}
 
 			.row.gtr-uniform {
@@ -729,7 +728,7 @@ input, select, textarea {
 				}
 
 					.row > * {
-						padding: 10px 10px 0px 10px;
+						padding: 0px 0px 0px 0px;
 					}
 
 					.row.gtr-uniform {
@@ -777,12 +776,12 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1280px) {
-
 			.row {
 				display: flex;
-				flex-wrap: wrap;
+				flex-direction: column;
 				box-sizing: border-box;
-				align-items: stretch;
+				align-items: center;
+				justify-content: space-around;
 			}
 
 				.row > * {
@@ -870,7 +869,7 @@ input, select, textarea {
 				}
 
 				.row > .col-7-large {
-					width: 58.33333%;
+					width: 50%;
 				}
 
 				.row > .off-7-large {
@@ -1027,7 +1026,7 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: stretch;
+				align-items: center;
 			}
 
 				.row > * {
@@ -1043,6 +1042,7 @@ input, select, textarea {
 				}
 
 				.row.aln-center {
+					align-items: center;
 					justify-content: center;
 				}
 
@@ -1399,7 +1399,12 @@ input, select, textarea {
 					margin-left: 91.66667%;
 				}
 
+				#top .image img {
+					height: 300px;
+					width: 300px;
+				}
 				.row > .col-12-small {
+					background: none;
 					width: 100%;
 				}
 
@@ -1636,8 +1641,8 @@ input, select, textarea {
 
 		.image img {
 			display: block;
+			height: 411.91px;
 			width: 100%;
-			height: auto;
 		}
 
 		.image.fit {
@@ -2113,7 +2118,8 @@ input, select, textarea {
 	}
 
 	#top {
-		padding: 10em 0 10em 0;
+		padding: 10em 0 0em 0;
+		margin-bottom: 30px;
 		text-align: left;
 	}
 
@@ -2129,7 +2135,7 @@ input, select, textarea {
 			}
 
 		#top h1 {
-			margin-top: 0.35em;
+			margin-top: 1em;
 		}
 
 		#top p {
@@ -2210,13 +2216,13 @@ input, select, textarea {
 
 				.wrapper.style4 .row-special {
 					margin: 2em 0 0 0;
-					padding: 2em 0 2em 0;
+					padding: 2em 0 0 0;
 				}
 
 		/* Articles */
 
 			#top {
-				padding: 8em 0;
+				padding-top: 5em;
 			}
 
 				#top .image {
